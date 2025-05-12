@@ -229,15 +229,20 @@ def Admin():
         try:
             Check=int(input("Enter a number(1-6): "))  # choose number for admin service
             if Check==1:
-                create_account() # ask create account for create customer account
+                create_account()    # ask create account for create customer account
+                break
             elif Check==2:
                 Deposit_money()  # deposit amount
+                break
             elif Check==3:
                 Withdrew_money()  #withdewal money
+                break
             elif Check==4:
                 check_balance()  # check current balance
+                break
             elif Check==5:
                 Transaction_history() # get transaction
+                break
             elif Check==6:
                 print("Exit")
                 break  #Admin service end and go to menu
@@ -255,15 +260,19 @@ def customer():
         print("4.Transaction History")
         print("5.Exit")
         try:
-            Check=int(input("Enter a number(1-6): "))  # choose number for customer service
+            Check=int(input("Enter a number(1-5): "))  # choose number for customer service
             if Check==1:
                 Deposit_money()       #deposit amount
+                break
             elif Check==2:
                 Withdrew_money()      #withdrewal amount
+                break
             elif Check==3:
                 check_balance()      #Check current balance
+                break
             elif Check==4:
                 Transaction_history()  # Get transaction details
+                break
             elif Check==5:
                 print("Exit")
                 break             # customer service end and go to menu.
